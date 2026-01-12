@@ -1,18 +1,35 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import Header from "@/components/ui/jamal/Header";
 import { motion } from "framer-motion";
 import { Database, Network, Code, GraduationCap } from "lucide-react";
-
+import { Button } from "../button";
+import { Card, CardContent, CardHeader, CardTitle } from "../card";
 
 export default function HomePage() {
   return (
-    <div className=" text-white">
+    <div className="min-h-screen bg-linear-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
       {/* Navbar */}
+      <header className="flex items-center justify-between px-8 py-6">
+        <h1 className="text-2xl font-bold tracking-wide">Jama Tech</h1>
+        <nav className="hidden md:flex gap-6 text-sm font-medium">
+          <a href="#about" className="hover:text-blue-300">
+            About
+          </a>
+          <a href="#services" className="hover:text-blue-300">
+            Services
+          </a>
+          <a href="#training" className="hover:text-blue-300">
+            Training
+          </a>
+          <a href="#contact" className="hover:text-blue-300">
+            Contact
+          </a>
+        </nav>
+        <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
+      </header>
 
       {/* Hero Section */}
-      <section className="px-8 py-20 max-w-6xl mx-auto mt-24">
+      <section className="px-8 py-20 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -20,7 +37,7 @@ export default function HomePage() {
           className="text-center"
         >
           <h2 className="text-4xl md:text-6xl font-extrabold mb-6">
-            Jama Tech and <span className="text-blue-400">Software House</span>
+            Jama Tech <span className="text-blue-400">Software House</span>
           </h2>
           <p className="text-lg md:text-xl text-blue-200 max-w-3xl mx-auto mb-8">
             A new center for technology, software development, databases, and
@@ -31,19 +48,18 @@ export default function HomePage() {
               Our Services
             </Button>
             <Button
-            asChild
               size="lg"
-              variant="default"
-              className="text-slate-900 hover:bg-blue-100 bg-white border-white hover:shadow-xs hover:shadow-white"
+              variant="outline"
+              className="text-white border-white hover:bg-white/10"
             >
-              <a href="/Contact"> Contact Us</a>
+              Contact Us
             </Button>
           </div>
         </motion.div>
       </section>
 
       {/* Services Section */}
-      {/* <section id="services" className="px-8 py-20 bg-blue-900/40">
+      <section id="services" className="px-8 py-20 bg-blue-900/40">
         <h3 className="text-3xl font-bold text-center mb-12">Our Services</h3>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="bg-blue-950/60 border-blue-800">
@@ -81,10 +97,10 @@ export default function HomePage() {
             </CardContent>
           </Card>
         </div>
-      </section> */}
+      </section>
 
       {/* Training Section */}
-      {/* <section id="training" className="px-8 py-20">
+      <section id="training" className="px-8 py-20">
         <h3 className="text-3xl font-bold text-center mb-12">
           Professional Training
         </h3>
@@ -113,10 +129,10 @@ export default function HomePage() {
             </CardContent>
           </Card>
         </div>
-      </section> */}
+      </section>
 
       {/* Contact Section */}
-      {/* <section id="contact" className="px-8 py-20 bg-blue-950/70 text-center">
+      <section id="contact" className="px-8 py-20 bg-blue-950/70 text-center">
         <h3 className="text-3xl font-bold mb-6">Contact Jama Tech</h3>
         <p className="text-blue-200 mb-8">
           Let’s build your next technology solution together.
@@ -124,13 +140,13 @@ export default function HomePage() {
         <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
           Contact Us
         </Button>
-      </section> */}
+      </section>
 
       {/* Footer */}
-      {/* <footer className="py-6 text-center text-blue-300 text-sm">
+      <footer className="py-6 text-center text-blue-300 text-sm">
         © {new Date().getFullYear()} Jama Tech Software House. All rights
         reserved.
-      </footer> */}
+      </footer>
     </div>
   );
 }
