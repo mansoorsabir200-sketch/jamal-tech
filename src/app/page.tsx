@@ -1,9 +1,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Header from "@/components/ui/jamal/Header";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Database, Network, Code, GraduationCap } from "lucide-react";
+import { Code, Database, GraduationCap, Network } from "lucide-react";
+import Link from "next/link";
+
 
 
 export default function HomePage() {
@@ -12,7 +14,7 @@ export default function HomePage() {
       {/* Navbar */}
 
       {/* Hero Section */}
-      <section className="px-8 py-20 max-w-6xl mx-auto mt-24">
+      <section className="px-8 py-20 max-w-6xl h-screen mx-auto mt-24">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,8 +44,8 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* Services Section */}
-      {/* <section id="services" className="px-8 py-20 bg-blue-900/40">
+      {/* Services Section  */}
+      <section id="services" className="px-8 py-20 bg-blue-900/40">
         <h3 className="text-3xl font-bold text-center mb-12">Our Services</h3>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="bg-blue-950/60 border-blue-800">
@@ -81,10 +83,10 @@ export default function HomePage() {
             </CardContent>
           </Card>
         </div>
-      </section> */}
+      </section> 
 
       {/* Training Section */}
-      {/* <section id="training" className="px-8 py-20">
+      <section id="training" className="px-8 py-20">
         <h3 className="text-3xl font-bold text-center mb-12">
           Professional Training
         </h3>
@@ -113,24 +115,24 @@ export default function HomePage() {
             </CardContent>
           </Card>
         </div>
-      </section> */}
+      </section>
 
-      {/* Contact Section */}
-      {/* <section id="contact" className="px-8 py-20 bg-blue-950/70 text-center">
+      {/* Contact Section  */}
+       <section id="contact" className="px-8 py-20 bg-blue-950/70 text-center">
         <h3 className="text-3xl font-bold mb-6">Contact Jama Tech</h3>
         <p className="text-blue-200 mb-8">
           Let’s build your next technology solution together.
         </p>
         <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-          Contact Us
+        <Link href="/Contact">Contacts Us</Link>
         </Button>
-      </section> */}
+      </section>
 
-      {/* Footer */}
-      {/* <footer className="py-6 text-center text-blue-300 text-sm">
-        © {new Date().getFullYear()} Jama Tech Software House. All rights
+      {/* Footer  */}
+       <footer className="py-6 text-center text-blue-300 text-sm">
+        © {new Date().getFullYear()} Jama Tech & Software House. All rights
         reserved.
-      </footer> */}
+      </footer>
     </div>
   );
 }

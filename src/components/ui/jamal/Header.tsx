@@ -1,6 +1,6 @@
 "use client"
 
-import { Menu } from "lucide-react";
+import { Link, Link2, Menu } from "lucide-react";
 import { Button } from "../button";
 import { Sheet, SheetContent,  SheetHeader, SheetTitle, SheetTrigger } from "../sheet";
 
@@ -38,11 +38,11 @@ export default function Header(){
             <div className="flex md:hidden ">
               <Sheet>
                 <SheetTrigger>
-                  <Menu />
+                  <Menu className="size-10 text-gray-300 hover:scale-102 cursor-pointer" />
                 </SheetTrigger>
                 <SheetContent className="bg-blue-900 text-white ">
                   <SheetHeader>
-                    <SheetTitle className="text-xl mb-4 text-gray-200"> Jamal tech and software house</SheetTitle>
+                    <SheetTitle className="text-xl mb-4 duration-1000 text-gray-200"> Jamal tech and software house</SheetTitle>
                     <div className="flex flex-col gap-y-4 items-center    ">
                       <a
                         href="/"
@@ -74,16 +74,14 @@ export default function Header(){
                       >
                         Contact
                       </a>
-                      <p> by Mansoor sabir :</p>
-                      <a href="https://msabir.netlify.app">devloper</a>
+                     
+                      <a href="https://msabir.netlify.app" className="flex gap-1 justify-center items-center hover:text-blue-400 bg-gray-800 px-12 rounded-sm"> <Link className="size-4"/>devloper</a>
                     </div>
                   </SheetHeader>
                 </SheetContent>
               </Sheet>
             </div>
-            <Button className="bg-blue-600 hover:bg-blue-700">
-              Get Started
-            </Button>
+           
           </header>
         </nav>
       </div>
