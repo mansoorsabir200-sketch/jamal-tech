@@ -3,7 +3,7 @@ import { Code2Icon, FileType2Icon, LucideLanguages, Network } from "lucide-react
 
 export default function Training(){
     return (
-      <div className="w-full mt-20">
+      <div className="w-full mt-24">
         <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-300 font-bold mt-4 text-center">
           We Training Students At
         </h2>

@@ -6,9 +6,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen mt-20 bg-linear-to-br from-blue-950 via-blue-900 to-blue-800 text-white px-6 py-16">
       {/* Header */}
-      <div
-        className="max-w-5xl mx-auto text-center mb-20"
-      >
+      <div className="max-w-5xl mx-auto text-center mb-20">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           About Jama Tech
         </h1>
@@ -20,9 +18,9 @@ export default function AboutPage() {
 
       {/* Vision & Mission */}
       <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 mb-24">
-        <Card className="bg-blue-950/60 border-blue-800">
+        <Card className="bg-blue-950/60 border-blue-800 hover:scale-103 duration-500">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2 text-gray-300 ">
               <Eye className="text-blue-400" /> Our Vision
             </CardTitle>
           </CardHeader>
@@ -33,9 +31,9 @@ export default function AboutPage() {
           </CardContent>
         </Card>
 
-        <Card className="bg-blue-950/60 border-blue-800">
+        <Card className="bg-blue-950/60 border-blue-800 hover:scale-103 duration-500">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2  text-gray-300">
               <Target className="text-blue-400" /> Our Mission
             </CardTitle>
           </CardHeader>
@@ -48,9 +46,9 @@ export default function AboutPage() {
       </section>
 
       {/* Who We Are */}
-      <section className="max-w-6xl mx-auto mb-24">
+      <section className="max-w-6xl mx-auto mb-24 ">
         <h2 className="text-3xl font-bold mb-10">Who We Are</h2>
-        <div className="bg-blue-950/60 border border-blue-800 rounded-2xl p-8 text-blue-200 leading-relaxed">
+        <div className="bg-blue-950/60 border hover:scale-103 duration-500 border-blue-800 rounded-2xl p-8 text-blue-200 leading-relaxed">
           Jama Tech Software House is built to bridge the gap between education
           and industry. We focus on teaching modern technologies such as
           programming, web development, databases, and networking while also
@@ -68,7 +66,7 @@ export default function AboutPage() {
       <section className="max-w-6xl mx-auto mb-24">
         <h2 className="text-3xl font-bold mb-10">Our Values</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="bg-blue-950/60 border-blue-800">
+          <Card className="bg-blue-950/60 border-blue-800 hover:scale-103 duration-500">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Users className="text-blue-400" /> Practical Learning
@@ -80,7 +78,7 @@ export default function AboutPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-blue-950/60 border-blue-800">
+          <Card className="bg-blue-950/60 border-blue-800 hover:scale-103 duration-500">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Users className="text-blue-400" /> Professional Quality
@@ -91,7 +89,7 @@ export default function AboutPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-blue-950/60 border-blue-800">
+          <Card className="bg-blue-950/60 border-blue-800 hover:scale-103 duration-500">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Users className="text-blue-400" /> Community Growth
@@ -106,7 +104,7 @@ export default function AboutPage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="max-w-4xl mx-auto text-center bg-blue-950/60 border border-blue-800 rounded-2xl p-12">
+      <section className="max-w-4xl mx-auto hover:scale-103 duration-500 text-center bg-blue-950/60 border border-blue-800 rounded-2xl p-12">
         <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
         <p className="text-blue-200 mb-6">
           Want to learn technology or build software for your business? Contact

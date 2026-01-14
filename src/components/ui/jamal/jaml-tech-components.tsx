@@ -9,8 +9,8 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-linear-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
       {/* Navbar */}
-      <header className="flex items-center justify-between px-8 py-6">
-        <h1 className="text-2xl font-bold tracking-wide">Jama Tech</h1>
+      <header className="flex items-center justify-between px-8 py-6 ">
+        <h1 className="text-2xl font-bold tracking-wide ">Jama Tech</h1>
         <nav className="hidden md:flex gap-6 text-sm font-medium">
           <a href="#about" className="hover:text-blue-300">
             About
